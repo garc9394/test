@@ -1,0 +1,27 @@
+.body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    background: white;
+}
+
+.navbar-gar {
+    padding-left: 80px;
+    color: rgb(58, 54, 54);
+    font-size: 24px;
+}
+
+.dropdown-toggle {
+    color: rgb(58, 54, 54);
+    font-size: 24px;
+}
+
+.footer {
+    background: grey;
+    padding-top: 6px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+}
