@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alien Sightings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
+  <script src="jquery.twbsPagination.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid header">
+                <div class="navbar-brand">
+                    <a href="https://garc9394.github.io/">
+                        <img src="../images/g-home.png" alt="Gar's Data Home" height="55" width="55">
+                    </a>
+                    <a class="icon" href="https://www.linkedin.com/in/garcheuy/" target="_blank">
+                        <img src="../images/linkedin.png" alt="LinkedIn Profile" height="36" width="36">
+                    </a>
+
+                    <a class="icon" href="https://github.com/garc9394" target="_blank">
+                        <img src="../images/github.png" alt="GitHub Repository" height="36" width="36">
+                    </a>
+
+                    <a class="icon" href="mailto:garcheuy@yahoo.com" target="_blank">
+                        <img src="../images/email_me.jpeg" alt="Email Me" height="36" width="36">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Works <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../aliens/aliens.html">Aliens Sightings</a></li>
+                                <li><a href="../Latitude/index.html">Latitude</a></li>
+                                <li><a href="Cloudiness.html">Cloudiness</a></li>
+                                <li><a href="windspeed.html">Wind Speed</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+            <h2 class="title">Search for Alien Sightings</h2>
+        </navbar>
+    </header>
+    <hr>
+  <div class="container">
+    <div class="row search">
+      <div class="col-md-4 col-sm-4">
+        <div class="form-group">
+          <form id="search-form">
+            <input type="text" class="form-control" id="datetime" placeholder="Date">
+            <input type="text" class="form-control" id="city" placeholder="City">
+            <select class="form-control" id="state" placeholder="State">
+              <option value="" selected="selected">Select State</option>
+            </select>
+            <select class="form-control" id="country" placeholder="Country">
+              <option value="" selected="selected">Select Country</option>
+            </select>
+            <select class="form-control" id="shape" placeholder="Shape">
+              <option value="" selected="selected">Select Shape</option>
+            </select>
+          </form>
+          <a id="search" class="btn btn-default">Search</a>
+          <a id="resetFld" class="btn btn-default">Reset Fields</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <nav aria-label="Search results pages">
+        <ul class="pagination">
+        </ul>
+      </nav>
+      <div class="col-md-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Date/Time</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Country</th>
+              <th>Shape</th>
+              <th>Duration (Minutes)</th>
+              <th>Comment</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Date/Time</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Country</th>
+              <th>Shape</th>
+              <th>Duration (Minutes)</th>
+              <th>Comment</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="data.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

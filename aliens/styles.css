@@ -1,0 +1,17 @@
+.search {
+  margin-top: 80px;
+}
+
+.form-control {
+  display: inline-block;
+  width: 250px;
+  margin: 4px;
+}
+
+.btn {
+  margin: 4px;
+}
+
+.pagination {
+  margin: 4px 10px 10px 20px;
+}
